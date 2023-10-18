@@ -1,0 +1,572 @@
+.cl-1{
+    background: #cd5c5c;
+}
+.cl-2{
+    background: #dc143c;
+}
+.cl-3{
+    background: #8b0000;
+}
+.cl-4{
+    background: #ffc0cb;
+}
+.cl-5{
+    background: #ff69b4;
+}
+.cl-6{
+    background: #c71585;
+}
+.cl-7{
+    background: #32cd32;
+}
+.cl-8{
+    background: #00fa9a;
+}
+.cl-9{
+    background: #2e8b57;
+}
+.cl-10{
+    background: #006400;
+}
+.cl-11{
+    background: #9acd32;
+}
+.cl-12{
+    background: #808000;
+}
+.cl-13{
+    background: #adff2f;
+}
+.cl-14{
+    background: #00ff00;
+}
+.cl-15{
+    background: #ffa07a;
+}
+.cl-16{
+    background: #ff4500;
+}
+.cl-17{
+    background: #ffa500;
+}
+.cl-18{
+    background: #bc8f8f;
+}
+.cl-19{
+    background: #f4a460;
+}
+.cl-20{
+    background: #8b4513;
+}
+.cl-21{
+    background: #d2691e;
+}
+.cl-22{
+    background: #a52a2a;
+}
+.cl-23{
+    background: #800000;
+}
+<html>
+<head>
+    <style>
+ .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+        }
+
+ .item { 
+             height: 100px;
+             width: 100px;
+         
+        }
+ .color {
+            color: rgb(86, 225, 244); 
+            height: 100px;
+            width: 100px;
+            background-color:rgb(86, 225, 244);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container">
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+    </div>
+    <div class="container">
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container">
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+    </div>
+    <div class="container">
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="color"></div>
+    </div>
+    <div class="container">
+        <div class="color"></div>
+        <div class="item"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+    </div>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="norm.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style-2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-4 col-lg-3">
+                <div class="block-1 cl-1">#CD5C5C</div>
+            </div>
+            <div class="d-none d-md-block col-md-4 col-lg-3">
+                <div class="block-1 cl-2">#DC143C</div>
+            </div>
+            <div class="d-none d-md-none col-lg-3 d-lg-block">
+                <div class="block-1 cl-3">#8B0000</div>
+            </div>
+            <div class="col-4 d-md-none d-md-block col-lg-3">
+                <div class="block-1 cl-24">#FF0000</div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-12">
+                            <div class="block-2 block-lg-1 block-md-1 cl-4">#FFC0CB</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-6 col-lg-12">
+                            <div class="block-2 block-lg-1 block-md-1 cl-5">#FF69B4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-8">
+                    <div class="block-2 block-lg-2 block-md-1 cl-6">#C71584</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="row">
+                        <div class="d-none d-md-block col-lg-12 col-md-12">
+                            <div class="block-lg-15 block-md-2 cl-13">#adff2f</div>
+                        </div>
+                        <div class="d-none d-md-block col-lg-12 col-md-12">
+                            <div class="block-lg-15 block-md-1 cl-14">#00ff00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-13">
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="block-2 block-md-2 block-lg-2 cl-7">#32cd32</div>
+                        </div>
+                        <div class="d-none d-md-none col-lg-6 d-lg-block">
+                            <div class="block-lg-1 cl-8">#00fa9a</div>
+                        </div>
+                        <div class="d-none d-md-none col-lg-6 d-lg-block">
+                            <div class="block-lg-1 cl-9">#2e8b57</div>
+                        </div>
+                        <div class="col-6 col-md-6 d-lg-none">
+                            <div class="block-1 block-md-1 cl-10">#006400</div>
+                        </div>
+                        <div class="col-6 col-md-6 d-lg-none">
+                            <div class="block-1 block-md-1 cl-11">#9acd32</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-13">
+                        <div class="d-none d-md-none col-lg-6 d-lg-block">
+                            <div class="block-lg-1 cl-10">#006400</div>
+                        </div>
+                        <div class="d-none d-md-none col-lg-6 d-lg-block">
+                            <div class="block-lg-1 cl-11">#9acd32</div>
+                        </div>
+                        
+                        <div class="col-6 col-md-6 d-lg-none">
+                            <div class="block-1 block-md-2 cl-8">#00fa9a</div>
+                        </div>
+                        <div class="col-6 col-md-6 d-lg-none">
+                            <div class="block-1 block-md-2 cl-9">#2e8b57</div>
+                        </div>
+                        <div class="d-none col-md-12 d-md-block col-lg-12">
+                            <div class="block-md-1 block-lg-2 cl-12">#808000</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-2 pull-left-lg-2 col-md-4 pull-left-md-1">
+                    <div class="block-1 cl-15">#ffa07a</div>
+                </div>
+                <div class="col-6 col-lg-2 pull-left-lg-4 col-md-4 pull-left-md-2">
+                    <div class="block-1 cl-16">#ff4500</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="block-2 block-lg-2 block-md-2 cl-18">#bc8f8f</div>
+                        </div>
+                        <div class="d-none d-lg-block col-6 col-lg-6">
+                            <div class="block-lg-2 cl-19">#f4a460</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="block-1 block-lg-1 block-md-1 cl-21">#d2691e</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="block-1 block-lg-1 block-md-1 cl-20">#8b4513</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-4">
+                    <div class="block-2 block-lg-1 block-md-2 cl-22">#a52a2a</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+body{
+	background: #ffffff;
+}
+div{
+	position: relative;
+	float: left;
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	background: #060606;
+}
+.row{
+	float: none;
+}
+.col-1{
+	width: 8.33333%;
+}
+
+.col-2{
+	width: 16.66666%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33333%;
+}
+
+.col-5{
+	width: 41.66666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.33333%;
+}
+.col-8{
+	width: 66.66666%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.33333%;
+}
+.col-11{
+	width: 91.66666%;
+}
+.col-12{
+	width: 100%;
+}
+
+.col-1,.col-2,.col-3,.col-4,
+.col-5,.col-6,.col-7,.col-8,
+.col-9,.col-10,.col-11,.col-12{
+	min-height: 1px;
+}
+.block-1{
+	width: 100%;
+	border: 15px solid #fff;
+	height: 150px;
+	background: #f00;
+}
+.block-15{
+	width: 100%;
+	border: 15px solid #fff;
+	height: 225px;
+	background: #f00;
+}
+.block-2{
+	width: 100%;
+	border: 15px solid #fff;
+	height: 300px;
+	background: #f00;
+}
+.block-3{
+	width: 100%;
+	border: 15px solid #fff;
+	height: 450px;
+	background: #f00;
+}
+.pull-left-1{
+	margin-left: 8.33333%;
+}
+.pull-left-2{
+	margin-left: 16.66666%;
+}
+.pull-left-3{
+	margin-left: 25%;
+}
+.pull-left-4{
+	margin-left: 33.33333%;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+@media (min-width: 768px){
+	.container{
+		width: 768px;
+	}
+	.col-md-1{
+		width: 8.33333%;
+	}
+	.col-md-2{
+		width: 16.66666%;
+	}
+	.col-md-3{
+		width: 25%;
+	}
+	.col-md-4{
+		width: 33.33333%;
+	}
+	.col-md-5{
+		width: 41.66666%;
+	}
+	.col-md-6{
+		width: 50%;
+	}
+	.col-md-7{
+		width: 58.33333%;
+	}
+	.col-md-8{
+		width: 66.66666%;
+	}
+	.col-md-9{
+		width: 75%;
+	}
+	.col-md-10{
+		width: 83.33333%;
+	}
+	.col-md-11{
+		width: 91.66666%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+	.col-md-1,.col-md-2,.col-md-3,.col-md-4,
+	.col-md-5,.col-md-6,.col-md-7,.col-md-8,
+	.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+		min-height: 1px;
+	}
+    .block-md-1{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 150px;
+        background: #f00;
+    }
+    .block-md-15{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 225px;
+        background: #f00;
+    }
+    .block-md-2{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 300px;
+        background: #f00;
+    }
+    .block-md-3{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 450px;
+        background: #f00;
+    }
+	.pull-left-md-1{
+		margin-left: 8.33333%;
+	}
+	.pull-left-md-2{
+		margin-left: 16.66666%;
+	}
+    .pull-left-md-3{
+        margin-left: 25%;
+    }
+    .pull-left-md-4{
+        margin-left: 33.33333%;
+    }
+    .d-md-none{
+        display: none;
+    }
+    .d-md-block{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px){
+	.container{
+		width: 1200px;
+	}
+	.col-lg-1{
+		width: 8.33333%;
+	}
+	.col-lg-2{
+		width: 16.66666%;
+	}
+	.col-lg-3{
+		width: 25%;
+	}
+	.col-lg-4{
+		width: 33.33333%;
+	}
+	
+	.col-lg-5{
+		width: 41.66666%;
+	}
+	.col-lg-6{
+		width: 50%;
+	}
+	.col-lg-7{
+		width: 58.33333%;
+	}
+	.col-lg-8{
+		width: 66.66666%;
+	}
+	.col-lg-9{
+		width: 75%;
+	}
+	.col-lg-10{
+		width: 83.33333%;
+	}
+	.col-lg-11{
+		width: 91.66666%;
+	}
+	.col-lg-12{
+		width: 100%;
+	}
+	.col-lg-13{
+		width: 37.5%;
+	}
+	.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,
+	.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,
+	.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{
+		min-height: 1px;
+	}
+	.block-lg-1{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 150px;
+        background: #f00;
+    }
+    .block-lg-15{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 225px;
+        background: #f00;
+    }
+    .block-lg-2{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 300px;
+        background: #f00;
+    }
+    .block-lg-3{
+        width: 100%;
+        border: 15px solid #fff;
+        height: 450px;
+        background: #f00;
+    }
+	.pull-left-lg-1{
+		margin-left: 8.33333%;
+	}
+	.pull-left-lg-2{
+		margin-left: 16.66666%;
+	}
+    .pull-left-lg-3{
+        margin-left: 25%;
+    }
+    .pull-left-lg-4{
+        margin-left: 33.33333%;
+    }
+	
+    .d-lg-none{
+        display: none;
+    }
+    .d-lg-block{
+        display: block;
+    }
+}
