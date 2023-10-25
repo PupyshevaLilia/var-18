@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Общие стили для формы */
+        form {
+            max-width: 500px;
+            margin: 10px 0;
+            padding: 20px;
+        }
+
+        /* Общие стили для инпутов */
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: auto;
+            box-sizing: border-box;
+            border: 1px solid #fd0202;
+            border-radius: 4px;
+        }
+
+        /* Стили для десктопной версии */
+        @media screen and (min-width: 600px) {
+            label {
+                display: inline-block;
+                width: 120px;
+                text-align: left;
+                margin-right: 10px;
+            }
+        }
+
+        /* Стили для мобильной версии */
+        @media screen and (max-width: 600px) {
+            label {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <p>Форма для регистрации абитуриента при поступлении</p>
+            <br> <br>
+            <label for="first_name">Имя:</label>
+            <input type="text" id="first_name" name="first_name">
+            <br>
+            <label for="last_name">Фамилия:</label>
+            <input type="text" id="last_name" name="last_name">
+            <br>
+            <label for="father">Отчество:</label>
+            <input type="text" id="father" name="father">
+            <br>
+            <label for="cnils">СНИЛС:</label>
+            <input type="text" id="cnils" name="cnils">
+            <br>
+            <label for="country">Гражданство:</label>
+            <input type="text" id="country" name="country">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <br>
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender">
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            <p>Документ, удостоверяющий личность:</p>
+            <br> <br>
+            <label for="tip">Тип документа:</label>
+            <input type="text" id="tip" name="tip">
+            <br>
+            <label for="ser">Серия:</label>
+            <input type="text" id="ser" name="ser">
+            <br>
+            <label for="nom">Номер:</label>
+            <input type="text" id="nom" name="nom">
+            <br>
+            <label for="data">Дата выдачи:</label>
+            <input type="text" id="data" name="data">
+            <br>
+            <label for="cod">Код подразделения:</label>
+            <input type="text" id="cod" name="cod">
+            <br>
+
+        </div>
+        <div>
+            <label for="inst">Институт:</label>
+            <input type="text" id="inst" name="inst">
+            <br>
+            <label for="study_program">Программа обучения:</label>
+            <input type="text" id="study_program" name="study_program">
+            <br>
+            <label for="forma">Форма обучения::</label>
+            <select id="forma" name="forma">
+                <option value="och">очно</option>
+                <option value="zao">заочно</option>
+                <option value="ochzao">очно-заочно</option>
+            </select><br>
+            <label for="interests">Интересы:</label>
+            <textarea id="interests" name="interests"></textarea>
+            <br>
+        </div>
+        <label for="checkbox">Я согласен с условиями</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</body>
+
+</html>
