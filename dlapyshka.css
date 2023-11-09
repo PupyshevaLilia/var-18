@@ -1,0 +1,61 @@
+.cannon {
+    width: 200px;
+    height: 100px;
+    background-color: gray;
+    position: relative;
+    animation: infinite;
+    position: fixed;
+top:20px;
+  }
+
+  .projectile {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    background-color: blue;
+    top: 50px;
+    left: 200px;
+    animation: projectile 4s infinite;
+    transform-origin: left center;
+  }
+
+  .target {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+margin-left: 16cm;
+position: fixed;
+top:2px;
+  }
+  .col {
+    width:40px;
+    height: 40px;
+    background: gray;
+    border-radius: 50%;
+
+position: fixed;
+top:3cm;
+  }
+
+  @keyframes shoot {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes projectile {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(400px);
+    }
+}

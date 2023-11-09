@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.submarine {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: navy;
+    border-radius: 50px;
+}
+
+.zad {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid navy;
+    border-bottom: 50px solid transparent;
+    margin-left: 3cm;
+
+
+}
+
+.fentil {
+    width: 0px;
+    height: 5px;
+    border-right: 20px solid transparent;
+    border-top: 20px solid navy;
+    border-left: 20px solid navy;
+    border-bottom: 20px solid navy;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    top: 285px;
+}
+
+.window {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.window:nth-child(1) {
+    left: 30px;
+}
+
+.window:nth-child(2) {
+    right: 30px;
+}
