@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Корректрость даты</title>
+    <script>
+        function validateDate() {
+            var day = parseInt(document.getElementById("day").value);
+            var month = parseInt(document.getElementById("month").value);
+            var year = parseInt(document.getElementById("year").value);
+
+            var isValid = true;
+
+            if ((year % 4 != 0) || (year % 100 == 0 && year % 400 != 0)) {
+          
+                if (month == 2 && day > 28) {
+                    isValid = false;
+                } else if (
+                    (month == 4 || month == 6 || month == 9 || month == 11) &&
+                    day > 30
+                ) {
+                    isValid = false;
+                } else if (day > 31) {
+                    isValid = false;
+                }
+            } else {
+                
+                if (month == 2 && day > 29) {
+                    isValid = false;
+                } else if (
+                    (month == 4 || month == 6 || month == 9 || month == 11) &&
+                    day > 30
+                ) {
+                    isValid = false;
+                } else if (day > 31) {
+                    isValid = false;
+                }
+            }
+            if (year < 1 || year > 9999 || isNaN(year)) {
+                isValid = false;
+            }
+            if (month < 1 || month > 12 || isNaN(month)) {
+                isValid = false;
+            }
+            if (day < 1 || day > 31 || isNaN(day)) {
+                isValid = false;
+            }
+
+            if (isValid) {
+                document.getElementById("result").innerHTML = "Дата корректра";
+            } else {
+                document.getElementById("result").innerHTML = "Дата некорректна";
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+    <center>
+        <h3>Корректрость даты</h3>
+        <label for="day">день:</label>
+        <input type="text" id="day"><br><br>
+        <label for="month">месяц:</label>
+        <input type="text" id="month"><br><br>
+        <label for="year">год:</label>
+        <input type="text" id="year"><br><br>
+        <button onclick="validateDate()">Проверить</button><br><br>
+        <p id="result"></p>
+    </center>
+</body>
+
+</html>
