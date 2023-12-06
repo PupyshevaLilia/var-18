@@ -1,0 +1,119 @@
+<HTML>
+
+<HEAD>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style3.css">
+
+    <TITLE>Форма абитуриента</TITLE>
+
+    <SCRIPT type="text/javascript">
+
+
+        function validate_form() {
+            valid = true;
+
+            if (document.contact_form.contact_name.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Ваше имя'.");
+                valid = false;
+            }
+            if (document.contact_form.email.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Почта'.");
+                valid = false;
+            }
+
+            if (document.contact_form.nomer.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Телефон'.");
+                valid = false;
+            }
+
+            if (document.contact_form.tip.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Тип документа'.");
+                valid = false;
+            }
+
+            if (document.contact_form.ser.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Серия'.");
+                valid = false;
+            }
+            if (document.contact_form.nom.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Номер'.");
+                valid = false;
+            }
+            if (document.contact_form.data.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Дата'.");
+                valid = false;
+            }
+            if (document.contact_form.cod.value == "") {
+                alert("Пожалуйста, введите данные в поле 'Код документа'.");
+                valid = false;
+            }
+
+            if (document.contact_form.inst.value == "") {
+                alert("Пожалуйста, выберете 'Институт' для обучения.");
+                valid = false;
+            }
+            if (document.contact_form.study_program.value == "") {
+                alert("Пожалуйста, выберете 'Программу обучения'.");
+                valid = false;
+            }
+
+            if ((document.contact_form.och[0].checked == false) && (document.contact_form.zao[1].checked == false)) {
+                alert("Пожалуйста, выберите 'форму обучения'.");
+                valid = false;
+            }
+
+            if (document.contact_form.terms.checked == false) {
+                alert("Пожалуйста, отметьте согласие с Соглашением.");
+                valid = false;
+            }
+            return valid;
+        }
+
+
+    </SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+    <FORM class="container" name="contact_form" method="post" onsubmit="return validate_form ( );">
+
+        <H1>Форма для регистрации абитуриента при поступлении</H1>
+
+        <P>Ваше ФИО: <INPUT type="text" name="contact_name"></P>
+        <p>Почта: <input type="Email" name="email"> </p>
+        <p>Телефон: <input type="text" name="nomer"> </p>
+
+        <div>
+            <h1>Документ, удостоверяющий личность:</h1>
+            <p>Тип документа: <input type="text" name="tip"> </p>
+            <p>Серия: <input type="text" name="ser"></p>
+            <p>Номер: <input type="text" name="nom"></p>
+            <p>Дата выдачи: <input type="text" name="data"></p>
+            <p>Код подразделения: <input type="text" name="cod">
+            </p>
+
+        </div>
+
+        <div>
+            <h1>Куда хотите поступить?</h1>
+            <p>Институт: <input type="text" name="inst">
+            </p>
+            <p>Программа обучения: <input type="text" name="study_program">
+            </p>
+            <p>Форма обучения:
+                <select id="forma" name="forma">
+                    <option value="och">очно</option>
+                    <option value="zao">заочно</option>
+                </select>
+            </p>
+        </div>
+        <p>Интересы: <textarea id="interests" name="interests"></textarea></p>
+        <P class="form-group">вы согласны с Соглашением?
+            <INPUT type="checkbox" name="terms" value="Yes">
+        </P>
+        <P><INPUT type="submit" name="send" value="Отправить данные"></P>
+    </FORM>
+</BODY>
+
+</HTML>
