@@ -2,17 +2,51 @@
 
 <head>
     <title>Калькулятор</title>
-<style>
-     button {
-      width: 80px;
-      height: 80px;
-      font-size: 30px;
-    }
-    .color{
-        background-color: rgb(98, 98, 202);
-    }
-</style>
+    <style>
+        button {
+            width: 80px;
+            height: 80px;
+            font-size: 30px;
+        }
+
+        .color {
+            background-color: rgb(98, 98, 202);
+        }
+    </style>
 </head>
+
+
+<input type="text" id="display" disabled style="width: 332px"><br><br>
+
+<button onclick="clearDisplay()">C</button>
+<button class="color" onclick="backspace()">←</button>
+<button class="color" onclick="squareRoot()">√</button>
+<button class="color" onclick="percentage()">%</button><br>
+
+<button class="color" onclick="inverse()">1/x</button>
+<button class="color" style="width: 164px" onclick="changeSign()">+/-</button>
+<button class="color" onclick="operation('/')">/</button><br>
+
+<button onclick="appendToDisplay(7)">7</button>
+<button onclick="appendToDisplay(8)">8</button>
+<button onclick="appendToDisplay(9)">9</button>
+<button class="color" onclick="operation('*')">*</button><br>
+
+<button onclick="appendToDisplay(4)">4</button>
+<button onclick="appendToDisplay(5)">5</button>
+<button onclick="appendToDisplay(6)">6</button>
+<button class="color" onclick="operation('-')">-</button><br>
+
+<button onclick="appendToDisplay(1)">1</button>
+<button onclick="appendToDisplay(2)">2</button>
+<button onclick="appendToDisplay(3)">3</button>
+<button class="color" onclick="operation('+')">+</button><br>
+
+
+<button onclick="appendToDisplay(0)">0</button>
+<button class="color" onclick="appendToDisplay('.')">.</button>
+<button class="color" onclick="calculate()">=</button>
+<button class="color" onclick="operation('+')">+</button><br>
 <script>
     var display = document.getElementById('display');
     var operand1 = '';
@@ -77,35 +111,6 @@
         display.value = parseFloat(display.value) / 100;
     }
 </script>
-<div>
-    <input type="text" id="display" disabled style="width: 332px"><br><br>
+</body>
 
-    <button onclick="clearDisplay()">C</button>
-    <button class="color" onclick="backspace()">←</button>
-    <button class="color" onclick="squareRoot()">√</button>
-    <button class="color" onclick="percentage()">%</button><br>
-
-    <button class="color" onclick="inverse()">1/x</button>
-    <button class="color" style="width: 164px" onclick="changeSign()">+/-</button>
-    <button class="color" onclick="operation('/')">/</button><br>
-
-    <button onclick="appendToDisplay(7)">7</button>
-    <button onclick="appendToDisplay(8)">8</button>
-    <button onclick="appendToDisplay(9)">9</button>
-    <button class="color" onclick="operation('*')">*</button><br>
-
-    <button onclick="appendToDisplay(4)">4</button>
-    <button onclick="appendToDisplay(5)">5</button>
-    <button onclick="appendToDisplay(6)">6</button>
-    <button class="color" onclick="operation('-')">-</button><br>
-
-    <button onclick="appendToDisplay(1)">1</button>
-    <button onclick="appendToDisplay(2)">2</button>
-    <button onclick="appendToDisplay(3)">3</button>
-    <button class="color" onclick="operation('+')">+</button><br>
-
-
-    <button onclick="appendToDisplay(0)">0</button>
-    <button class="color" onclick="appendToDisplay('.')">.</button>
-    <button class="color" onclick="calculate()">=</button>
-    <button class="color" onclick="operation('+')">+</button><br>
+</html>
